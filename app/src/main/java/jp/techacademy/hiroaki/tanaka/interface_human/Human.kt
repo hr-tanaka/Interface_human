@@ -2,12 +2,13 @@ package jp.techacademy.hiroaki.tanaka.interface_human
 
 import android.util.Log
 
-abstract class Human: Animal, Thinkable {
+class Human: Animal, Thinkable {
 
-    abstract var hobby: String
+    var hobby: String
 
     // 引数付きコンストラクタ
     constructor(name: String, age: Int, hobby: String): super(name, age) {
+        this.hobby = hobby
     }
 
     // Animalクラスのメソッドをオーバーライド
